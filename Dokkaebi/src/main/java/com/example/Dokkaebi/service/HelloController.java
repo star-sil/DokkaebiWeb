@@ -5,11 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 @RestController
 public class HelloController {
     @GetMapping("/hello")
     public String hello(){
-        return "김성은";
+        return "Dokkaebi project\n" + new Date() ;
     }
 
 }
